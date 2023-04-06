@@ -11,6 +11,7 @@ gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
 #Git config
 git config --global user.email "csod@ok.dk"
 git config --global user.name "Christian Sindberg Oddershede"
+git config --global init.defaultBranch "main"
 
 # Better Alt-tabbing (each window not each application)
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
