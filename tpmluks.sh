@@ -16,7 +16,7 @@ fi
 for DEVICE in $DEVID
 do
 	echo "Enrolling $DEVICE for tpm"
-	sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+2+4+7 $DEVICE
+	sudo systemd-cryptenroll $DEVICE --wipe-slot=tpm2 --tpm2-device=auto --tpm2-pcrs=0+2+4+7
 	echo "Done... Generating a recovery key for $DEVICE"
 	sudo systemd-cryptenroll --recovery-key $DEVICE
 done
