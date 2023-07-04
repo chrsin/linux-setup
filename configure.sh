@@ -20,6 +20,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward  "['<Shif
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward  "[]"
 
+gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Super>Down']"
+
 #Theme setup
 gsettings set org.gnome.desktop.background primary-color "#17607b"
 gsettings set org.gnome.desktop.background color-shading-type "solid"
